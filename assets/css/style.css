@@ -1,0 +1,137 @@
+:root {
+  --clinic-green: #1b6e3c;
+  --clinic-green-dark: #124f2b;
+  --clinic-green-light: #e6f4ea;
+  --clinic-orange: #f2792b;
+  --clinic-orange-dark: #d9631a;
+  --clinic-white: #ffffff;
+  --clinic-black: #1a1a1a;
+  --clinic-gray: #6b6b6b;
+}
+
+body {
+  background-color: #f7f8f6;
+  color: var(--clinic-black);
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+/* Navbar */
+.navbar-siam {
+  background-color: var(--clinic-green);
+}
+.navbar-siam .navbar-brand,
+.navbar-siam .nav-link {
+  color: var(--clinic-white) !important;
+}
+.navbar-siam .nav-link:hover {
+  color: var(--clinic-orange) !important;
+}
+.navbar-siam .navbar-brand .siam-badge {
+  background-color: var(--clinic-orange);
+  color: var(--clinic-white);
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* Buttons */
+.btn-primary, .btn-clinic {
+  background-color: var(--clinic-green);
+  border-color: var(--clinic-green);
+  color: var(--clinic-white);
+}
+.btn-primary:hover, .btn-clinic:hover {
+  background-color: var(--clinic-green-dark);
+  border-color: var(--clinic-green-dark);
+}
+.btn-accent {
+  background-color: var(--clinic-orange);
+  border-color: var(--clinic-orange);
+  color: var(--clinic-white);
+}
+.btn-accent:hover {
+  background-color: var(--clinic-orange-dark);
+  border-color: var(--clinic-orange-dark);
+  color: var(--clinic-white);
+}
+.btn-outline-primary {
+  color: var(--clinic-green);
+  border-color: var(--clinic-green);
+}
+.btn-outline-primary:hover {
+  background-color: var(--clinic-green);
+  border-color: var(--clinic-green);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.summary-card {
+  border-radius: 0.75rem;
+  color: var(--clinic-white);
+  padding: 1rem;
+}
+.summary-card.green  { background-color: var(--clinic-green); }
+.summary-card.orange { background-color: var(--clinic-orange); }
+.summary-card.black  { background-color: var(--clinic-black); }
+.summary-card.white  { background-color: var(--clinic-white); color: var(--clinic-black); border: 1px solid #e2e2e2; }
+.summary-card .display-6 { font-weight: 700; }
+
+/* SIAM assistant panel */
+.siam-panel {
+  background: linear-gradient(135deg, var(--clinic-green) 0%, var(--clinic-green-dark) 100%);
+  color: var(--clinic-white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.siam-panel .siam-icon {
+  background-color: var(--clinic-orange);
+  color: var(--clinic-white);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.siam-suggestion {
+  background-color: var(--clinic-white);
+  color: var(--clinic-black);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--clinic-orange);
+}
+.badge-confidence-high   { background-color: var(--clinic-green); }
+.badge-confidence-medium { background-color: var(--clinic-orange); }
+.badge-confidence-low    { background-color: var(--clinic-gray); }
+
+/* Status badges */
+.badge-status-Pending   { background-color: var(--clinic-orange); }
+.badge-status-Approved  { background-color: var(--clinic-green); }
+.badge-status-Completed { background-color: var(--clinic-black); }
+.badge-status-Rejected  { background-color: #b3261e; }
+.badge-status-Cancelled { background-color: var(--clinic-gray); }
+
+table.table thead {
+  background-color: var(--clinic-green-light);
+}
+
+footer {
+  background-color: var(--clinic-black) !important;
+  color: #cfcfcf;
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer a { color: var(--clinic-orange); }
+
