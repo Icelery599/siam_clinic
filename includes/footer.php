@@ -1,5 +1,5 @@
 </div><!-- /.container -->
-<footer class="py-3 mt-5">
+<footer class="py-3">
   <div class="container text-center small">
     &copy; <?= date('Y') ?> SIAM Clinic Management System. All rights reserved.
   </div>
