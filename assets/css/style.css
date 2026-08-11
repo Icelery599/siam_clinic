@@ -13,6 +13,13 @@ body {
   background-color: #f7f8f6;
   color: var(--clinic-black);
   font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .container.py-4 {
+  flex: 1 0 auto;
 }
 
 /* Navbar */
@@ -127,10 +134,9 @@ table.table thead {
 footer {
   background-color: var(--clinic-black) !important;
   color: #cfcfcf;
+  flex-shrink: 0;
+  margin-top: auto;
   margin-bottom: 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 footer a { color: var(--clinic-orange); }
